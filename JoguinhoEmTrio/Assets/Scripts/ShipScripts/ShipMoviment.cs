@@ -7,7 +7,7 @@ using UnityEngine;
 public class ShipMoviment : MonoBehaviour
 {   
 
-    public float velocity = 5,horizontalLimit = 8, direction =0;
+    public float velocity = 5,horizontalLimit = 4.3f, direction =0;
     public GameObject ship;
     // Start is called before the first frame update
     void Start()
@@ -21,11 +21,11 @@ public class ShipMoviment : MonoBehaviour
         direction = Input.GetAxis("Horizontal");
         if(transform.position.x < horizontalLimit && direction > 0)
         {
-            transform.position = transform.position + new Vector3(velocity*Time.deltaTime,0,0);
+            transform.position += Vector3.right*velocity*Time.deltaTime;
         }
         if(transform.position.x > -horizontalLimit && direction < 0)
         {
-            transform.position = transform.position + new Vector3(-velocity*Time.deltaTime,0,0);
+            transform.position += Vector3.left*velocity*Time.deltaTime;
         }
     }
 }

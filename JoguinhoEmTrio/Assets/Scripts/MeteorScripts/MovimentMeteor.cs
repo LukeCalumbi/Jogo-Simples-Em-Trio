@@ -6,7 +6,7 @@ public class MeteorMovment : MonoBehaviour
 {   
     
     public GameObject meteor;
-    public float velocity =5,minRadius = 0.75f,maxRadius = 1.25f,minPosition = -7.5f,maxPosition =7.5f;
+    public float minVelocity = 5, maxVelocity =8,velocity,minRadius = 0.75f,maxRadius = 1.25f,minPosition = -7f,maxPosition =7f;
     // Start is called before the first frame update
     void Start()
     {   
@@ -14,6 +14,7 @@ public class MeteorMovment : MonoBehaviour
         transform.localScale = new Vector3(1,1,0)*radius; 
         float positionX = Random.Range(minPosition,maxPosition);
         transform.position += Vector3.left*positionX;
+        this.velocity = Random.Range(minVelocity,maxVelocity);
     }
 
     // Update is called once per frame

@@ -9,7 +9,7 @@ public class GenerateMeteor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SpawnMeteor();
+        
     }
 
     // Update is called once per frame
