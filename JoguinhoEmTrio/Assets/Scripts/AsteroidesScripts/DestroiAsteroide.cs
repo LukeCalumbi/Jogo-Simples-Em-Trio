@@ -1,26 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class DestroiAsteroide : MonoBehaviour
 {   
-    private float vidaAsteroide;
-    private GameObject asteroide;
     void Start()
     {   
-        this.vidaAsteroide = GetComponent<InicializaAsteroide>().vidaAsteroide;
-        this.asteroide = GetComponent<GameObject>();
+
     }
 
     void Update()
     {   
+        
         if (transform.position.y < -15)
-        {
-            Destroy(asteroide);
+        {   
+            Destroy(this.gameObject);
         }
-        if (vidaAsteroide <= 0)
+        if (GetComponent<InicializaAsteroide>().vidaAsteroide <= 0)
         {
-            Destroy(asteroide);
+            Destroy(this.gameObject);
         }
     }
 }

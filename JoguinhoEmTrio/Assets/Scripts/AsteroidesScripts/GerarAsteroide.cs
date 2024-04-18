@@ -12,19 +12,22 @@ public class GerarAsteroide : MonoBehaviour
     }
 
     void Update()
-    {
-        if(temporizador < tempoEspera)
+    {   
+        if (!Controlador.playerAtingido)
         {
-            temporizador += Time.deltaTime;
-        }
-        else
-        {
-            temporizador = 0;
-            SpawnMeteor();
+            if(temporizador < tempoEspera)
+            {
+                temporizador += Time.deltaTime;
+            }
+            else
+            {
+                temporizador = 0;
+                Gerar1Asteroide();
+            }
         }
     }
 
-    void SpawnMeteor()
+    void Gerar1Asteroide()
     {
         Instantiate(asteroide,this.transform.position, transform.rotation);
     }

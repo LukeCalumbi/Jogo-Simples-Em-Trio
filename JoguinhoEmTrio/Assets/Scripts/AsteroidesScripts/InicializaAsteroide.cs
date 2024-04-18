@@ -17,9 +17,10 @@ public class InicializaAsteroide : MonoBehaviour
         float positionX = Random.Range(minPosicaoX,maxPosicaoX);
         transform.position += Vector3.left*positionX;
 
-        this.velocidade = Random.Range(minVelocidade,maxVelocidade);
+        velocidade = Random.Range(minVelocidade,maxVelocidade);
 
-        this.vidaAsteroide = vidaBase*Raio;
+        vidaAsteroide = vidaBase*Raio;  
+
     }
 
     void Update()

@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InicializaControlador : MonoBehaviour
+public class Controlador : MonoBehaviour
 {   
-    public bool playerVivo, playerAtingido;
-    public int vidasJogador,score;
-    public int modoJogo; // 0 => start, 1 => jogando, 2 => gameover
+    public static bool playerAtingido;
+    public static int vidasJogador,score;
+    public static int modoJogo; // 0 => start, 1 => jogando, 2 => gameover
     void Start()
     {
         modoJogo = 0;
@@ -38,7 +38,6 @@ public class InicializaControlador : MonoBehaviour
         //     continue;
         // }
 
-        playerVivo = true;
         playerAtingido = false;
         vidasJogador = 3;
         score = 0;

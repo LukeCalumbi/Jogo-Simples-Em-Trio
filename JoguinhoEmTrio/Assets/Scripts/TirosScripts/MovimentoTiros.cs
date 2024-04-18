@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class MovimentoTiros : MonoBehaviour
 {   
-    public float velocidadeTiro=5;
+    private float velocidadeTiro;
     // Start is called before the first frame update
     void Start()
     {
-        
+        velocidadeTiro = GetComponent<InicializaTiro>().velocidadeTiro;
     }
 
     // Update is called once per frame

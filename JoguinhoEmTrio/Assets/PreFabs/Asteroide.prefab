@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 5889780993980350501}
   - component: {fileID: 5814873928616737835}
   - component: {fileID: 2615776373558934660}
-  - component: {fileID: 4451944689089125881}
+  - component: {fileID: 4836155762387343709}
   - component: {fileID: 3039472422810559867}
-  - component: {fileID: -4012530262004980568}
-  - component: {fileID: 6933041320617851158}
+  - component: {fileID: 7580042744548672338}
+  - component: {fileID: -7319324204809813646}
+  - component: {fileID: 2146600173006390106}
   m_Layer: 0
   m_Name: Asteroide
   m_TagString: Asteroide
@@ -124,7 +125,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.15
---- !u!50 &4451944689089125881
+--- !u!50 &4836155762387343709
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
@@ -168,11 +169,11 @@ MonoBehaviour:
   velocidade: 0
   minRaio: 0.75
   maxRaio: 1.25
-  minPosicaoX: -7
-  maxPosicaoX: 7
+  minPosicaoX: -4.3
+  maxPosicaoX: 4.3
   vidaAsteroide: 0
   vidaBase: 6
---- !u!114 &-4012530262004980568
+--- !u!114 &7580042744548672338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -184,7 +185,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b92eda88cc69046b315bc4b26232ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6933041320617851158
+--- !u!114 &-7319324204809813646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 446738898518876234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf098c002f57f5d499ac6b4da8fc10b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2146600173006390106
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

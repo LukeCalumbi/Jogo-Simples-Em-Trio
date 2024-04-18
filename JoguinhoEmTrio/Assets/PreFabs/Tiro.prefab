@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7921909861632548262}
   - component: {fileID: 1156797480683123292}
-  - component: {fileID: 5709064027560991896}
   - component: {fileID: 7928830491724203416}
+  - component: {fileID: 8064487427010676012}
   - component: {fileID: -9150267591803904357}
+  - component: {fileID: 258296015631667492}
   m_Layer: 0
   m_Name: Tiro
   m_TagString: Tiro
@@ -87,33 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!50 &5709064027560991896
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923297266551127589}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!61 &7928830491724203416
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -159,6 +133,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &8064487427010676012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923297266551127589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d5e9b224685a6b44a03a917dc4fc608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  danoTiro: 1
+  velocidadeTiro: 5
+  temporizador: 3
 --- !u!114 &-9150267591803904357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,4 +160,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39a10c839a051df419207cd3234ff095, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidadeTiro: 3
+--- !u!114 &258296015631667492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923297266551127589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16d7e3ac08f51934c868118fa871d0e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
