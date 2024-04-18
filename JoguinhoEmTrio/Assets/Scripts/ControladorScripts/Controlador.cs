@@ -18,11 +18,11 @@ public class Controlador : MonoBehaviour
         {
             ComecarJogo();
         }
-        else if (playerAtingido)
+        if (playerAtingido)
         {
-            
+            vidasJogador--;
         }
-        else if(modoJogo == 2)
+        if(vidasJogador <= 0)
         {
             TerminarJogo();
         }
@@ -33,11 +33,6 @@ public class Controlador : MonoBehaviour
     {   
         Debug.Log("Para comecar o jogo Digite K");
 
-        // while(!Input.GetKeyDown(KeyCode.K))
-        // {
-        //     continue;
-        // }
-
         playerAtingido = false;
         vidasJogador = 3;
         score = 0;
@@ -46,19 +41,6 @@ public class Controlador : MonoBehaviour
 
         modoJogo = 1;
     } 
-
-
-    public void AplicaDano()
-    {   
-        if(vidasJogador > 1){
-            
-        }
-        if(vidasJogador == 1)
-        {
-            modoJogo = 2;
-        };
-    }
-
 
     public void TerminarJogo()
     {

@@ -9,18 +9,24 @@ public class Estrelas : MonoBehaviour
     
     void Start()
     {   
-        float positionY = Random.Range(10,40);
-        float positionX = Random.Range(-maxPosicaoX,maxPosicaoX);
-        transform.position += Vector3.left*positionX + Vector3.up*positionY;
+        DarPosicaoEstrela();
     }
 
     void Update()
     {   
-        if(transform.position.y < -16)
-        {
-            ReciclaEstrela();
-        }
         MovimentoEstrela();
+
+        if(transform.position.y < -16)
+            RealocarEstrela();
+    }
+
+
+
+    void DarPosicaoEstrela()
+    {
+        float positionY = Random.Range(10,40);
+        float positionX = Random.Range(-maxPosicaoX,maxPosicaoX);
+        transform.position += Vector3.left*positionX + Vector3.up*positionY;
     }
 
     private void MovimentoEstrela()
@@ -28,10 +34,10 @@ public class Estrelas : MonoBehaviour
         transform.position += Vector3.down * velocidade * Time.deltaTime;
     }
 
-    private void ReciclaEstrela()
-    {
+    private void RealocarEstrela()
+    {   
         float positionX = Random.Range(-maxPosicaoX,maxPosicaoX);
-        transform.position = new Vector3(positionX,11,transform.position.z); //Vector3.left*positionX + Vector3.up*11;
+        transform.position = new Vector3(positionX,11,transform.position.z);          
     }
 
 

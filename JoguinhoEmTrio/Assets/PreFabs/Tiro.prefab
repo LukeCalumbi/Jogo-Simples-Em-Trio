@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 7921909861632548262}
   - component: {fileID: 1156797480683123292}
   - component: {fileID: 7928830491724203416}
-  - component: {fileID: 8064487427010676012}
-  - component: {fileID: -9150267591803904357}
-  - component: {fileID: 258296015631667492}
+  - component: {fileID: -874556645019905559}
   m_Layer: 0
   m_Name: Tiro
   m_TagString: Tiro
@@ -133,7 +131,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &8064487427010676012
+--- !u!114 &-874556645019905559
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -142,33 +140,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 1923297266551127589}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d5e9b224685a6b44a03a917dc4fc608, type: 3}
+  m_Script: {fileID: 11500000, guid: f1419efc01beeda4580d9b80c328152c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   danoTiro: 1
   velocidadeTiro: 5
-  temporizador: 3
---- !u!114 &-9150267591803904357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923297266551127589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39a10c839a051df419207cd3234ff095, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &258296015631667492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923297266551127589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16d7e3ac08f51934c868118fa871d0e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

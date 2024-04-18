@@ -12,10 +12,7 @@ GameObject:
   - component: {fileID: 5814873928616737835}
   - component: {fileID: 2615776373558934660}
   - component: {fileID: 4836155762387343709}
-  - component: {fileID: 3039472422810559867}
-  - component: {fileID: 7580042744548672338}
-  - component: {fileID: -7319324204809813646}
-  - component: {fileID: 2146600173006390106}
+  - component: {fileID: -6927245051494481081}
   m_Layer: 0
   m_Name: Asteroide
   m_TagString: Asteroide
@@ -152,7 +149,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3039472422810559867
+--- !u!114 &-6927245051494481081
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 446738898518876234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: db9ea31c32676624a9135a6ad919f2c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 86f0d855fdcec5a41afbac60d51564ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   minVelocidade: 5
@@ -169,43 +166,6 @@ MonoBehaviour:
   velocidade: 0
   minRaio: 0.75
   maxRaio: 1.25
-  minPosicaoX: -4.3
   maxPosicaoX: 4.3
   vidaAsteroide: 0
-  vidaBase: 6
---- !u!114 &7580042744548672338
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446738898518876234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35b92eda88cc69046b315bc4b26232ad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-7319324204809813646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446738898518876234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf098c002f57f5d499ac6b4da8fc10b8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2146600173006390106
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 446738898518876234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71486aacc8dd7124ebcae5dca54928fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  vidaPadrao: 3
