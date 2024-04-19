@@ -16,14 +16,5 @@ public class AsteroidesPrefab : MonoBehaviour
     public GameObject asteroide10;
     public GameObject asteroide11;
     public GameObject asteroide12;
-    public GameObject asteroide13;
-    public GameObject asteroide14;
-    public GameObject asteroide15;
-    public GameObject asteroide16;
-    public GameObject asteroide17;
-    public GameObject asteroide18;
-    public GameObject asteroide19;
-    public GameObject asteroide20;
-
 
 }

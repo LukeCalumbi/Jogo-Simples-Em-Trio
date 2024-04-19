@@ -6,7 +6,7 @@ public class Asteroide : MonoBehaviour
 {   
     public float minVelocidade = 5, maxVelocidade =8,velocidade;
     public float maxPosicaoX =7f;
-    public float vidaAsteroide;
+    public float vidaAsteroide, transferenciaMomento=0.05f;
     void Start()
     {
         InicializaAsteroide();
@@ -33,7 +33,7 @@ public class Asteroide : MonoBehaviour
             case "Tiro":
                 Debug.Log("asteroide colidiu com um tiro");
                 vidaAsteroide -= collision2D.collider.GetComponent<Tiro>().danoTiro;
-                velocidade -= collision2D.collider.GetComponent<Tiro>().velocidadeTiro*0.2f;
+                velocidade -= collision2D.collider.GetComponent<Tiro>().velocidadeTiro*transferenciaMomento;
                 Destroy(collision2D.collider.gameObject);
                 break;
         }

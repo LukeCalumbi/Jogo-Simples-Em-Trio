@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Nave : MonoBehaviour
 {   
-    public float velocidade = 5, limiteHorizontal = 4.3f;
-    private float direcao;
+    public float velocidade = 5, limiteHorizontal = 4.3f,distanciaTiro=1.38f;
+    private float direcao; 
     public GameObject tiro;
     void Start()
     {
@@ -35,7 +35,7 @@ public class Nave : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space) && !Controlador.playerAtingido)
         {
-            Vector3 position = transform.position + Vector3.up;
+            Vector3 position = transform.position + Vector3.up*distanciaTiro;
             Instantiate(tiro,position,transform.rotation);
         }
     }

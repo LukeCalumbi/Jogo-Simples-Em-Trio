@@ -22,4 +22,10 @@ public class Tiro : MonoBehaviour
     {
         transform.position += Vector3.up*velocidadeTiro*Time.deltaTime;
     }
+
+    void ControlarAnimação()
+    {
+
+    }
+
 }

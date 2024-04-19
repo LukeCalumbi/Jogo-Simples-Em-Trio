@@ -97,6 +97,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41109212b33de77419e059ed8565862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  asteroide: {fileID: 446738898518876234, guid: 7fd8d2a335a4f904b842483ea5fe49f9, type: 3}
+  asteroide1: {fileID: 2679493004112360121, guid: 5c143e54062cac94b824d4ebea9a40ed, type: 3}
+  asteroide2: {fileID: 8446125830490268036, guid: f995dc3d7b281f24c817dc17b29f6aaf, type: 3}
+  asteroide3: {fileID: 2873860596819707825, guid: a3bb09cd09c07ec49808a94d6decc9dd, type: 3}
+  asteroide4: {fileID: 6098787581626982350, guid: 50805a1f39f2c394fbdc32dbca1dcb1c, type: 3}
+  asteroide5: {fileID: 2611795550231105848, guid: 6f1fb1642512761458abdcbe66cdfef1, type: 3}
+  asteroide6: {fileID: 1652890134706318671, guid: 6bdebe7ca1ec4db4b85fa7af9527761c, type: 3}
+  asteroide7: {fileID: 120850397872148553, guid: f2445a6b2ecd8f741ab1e1fad0d2dcb1, type: 3}
+  asteroide8: {fileID: 6071110260229932638, guid: 19c832750c0aa524daba29076dbdeacf, type: 3}
+  asteroide9: {fileID: 6457971811099052308, guid: 4da71b1cd9d1abb4e93e1a366b9a81a6, type: 3}
+  asteroide10: {fileID: 1607140847140664123, guid: 93e379c688fbca74e9fafd6411b80827, type: 3}
+  asteroide11: {fileID: 1380070486454330623, guid: 2d0d4fdfe60565948a396383d9382a1e, type: 3}
+  asteroide12: {fileID: 5497872005204276644, guid: 70ea4952ec0cac9459f185f54784af31, type: 3}
   tempoEspera: 3
   temporizador: 0

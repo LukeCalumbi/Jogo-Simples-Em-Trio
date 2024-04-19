@@ -37,7 +37,7 @@ public class Controlador : MonoBehaviour
         vidasJogador = 3;
         score = 0;
 
-        //inicia jogo
+        
 
         modoJogo = 1;
     } 

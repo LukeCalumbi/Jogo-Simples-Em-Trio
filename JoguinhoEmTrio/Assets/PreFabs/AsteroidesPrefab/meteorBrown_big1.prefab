@@ -188,4 +188,4 @@ MonoBehaviour:
   maxVelocidade: 8
   velocidade: 0
   maxPosicaoX: 4.9
-  vidaAsteroide: 2
+  vidaAsteroide: 5

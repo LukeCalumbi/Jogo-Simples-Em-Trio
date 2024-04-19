@@ -16,14 +16,6 @@ public class GeradorAsteroide : MonoBehaviour
     public GameObject asteroide10;
     public GameObject asteroide11;
     public GameObject asteroide12;
-    public GameObject asteroide13;
-    public GameObject asteroide14;
-    public GameObject asteroide15;
-    public GameObject asteroide16;
-    public GameObject asteroide17;
-    public GameObject asteroide18;
-    public GameObject asteroide19;
-    public GameObject asteroide20;
 
     public float tempoEspera = 3, temporizador =0;
     void Start()
@@ -49,7 +41,7 @@ public class GeradorAsteroide : MonoBehaviour
 
     void Gerar1Asteroide()
     {   
-        int num = Random.Range(1, 20);
+        int num = Random.Range(1, 12);
         UnityEngine.Quaternion rotacao = UnityEngine.Quaternion.Euler(0, 0, Random.Range(0, 360));
 
 
@@ -91,32 +83,6 @@ public class GeradorAsteroide : MonoBehaviour
             case 12:
                 Instantiate(asteroide12,this.transform.position, rotacao);
                 break;
-            case 13:
-                Instantiate(asteroide13,this.transform.position, rotacao);
-                break;
-            case 14:
-                Instantiate(asteroide14,this.transform.position, rotacao);
-                break;
-            case 15:
-                Instantiate(asteroide15,this.transform.position, rotacao);
-                break;
-            case 16:
-                Instantiate(asteroide16,this.transform.position, rotacao);
-                break;
-            case 17:
-                Instantiate(asteroide17,this.transform.position, rotacao);
-                break;
-            case 18:
-                Instantiate(asteroide18,this.transform.position, rotacao);
-                break;
-            case 19:
-                Instantiate(asteroide19,this.transform.position, rotacao);
-                break;
-            case 20:
-                Instantiate(asteroide20,this.transform.position, rotacao);
-                break;
-            
-
         }
     }
 }

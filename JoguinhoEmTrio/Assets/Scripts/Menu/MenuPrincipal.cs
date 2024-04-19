@@ -23,7 +23,6 @@ public class MenuPrincipal : MonoBehaviour
     {
         painelCreditos.SetActive(false);
         painelMenuInicial.SetActive(true);
-
     }
 
     public void SairJogo()
