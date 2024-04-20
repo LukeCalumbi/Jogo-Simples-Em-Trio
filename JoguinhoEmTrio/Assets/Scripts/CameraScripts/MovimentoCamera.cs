@@ -15,8 +15,7 @@ public class MovimentoCamera : MonoBehaviour
         if (Controlador.playerAtingido)
         {
             SeguirPlayer();
-        }
-  
+        }  
     }
 
     private void SeguirPlayer()

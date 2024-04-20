@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class Asteroide : MonoBehaviour
 {   
-    public float minVelocidade = 5, maxVelocidade =8,velocidade;
+    public float velocidade;
     public float maxPosicaoX =7f;
     public float vidaAsteroide, transferenciaMomento=0.05f;
+    public float pontuacaoAsteroide;
     void Start()
     {
         InicializaAsteroide();
@@ -16,9 +17,13 @@ public class Asteroide : MonoBehaviour
     {
         MovimentarAsteroide();
 
-        if (transform.position.y < -20 || vidaAsteroide <= 0) 
+        if (transform.position.y < -20) 
             Destroy(this.gameObject);
-
+        if(vidaAsteroide <= 0)
+        {
+            Controlador.score += pontuacaoAsteroide;
+            Destroy(this.gameObject);
+        } 
     }
 
     void OnCollisionEnter2D(Collision2D collision2D)
@@ -50,7 +55,8 @@ public class Asteroide : MonoBehaviour
         float positionX = Random.Range(-maxPosicaoX,maxPosicaoX);
         transform.position += Vector3.left*positionX;
 
-        velocidade = Random.Range(minVelocidade,maxVelocidade);
+        velocidade = Random.Range(Controlador.velocidadeMediaAsteroide-1.5f,Controlador.velocidadeMediaAsteroide+1.5f);
+        pontuacaoAsteroide = vidaAsteroide;
     }
 
 }

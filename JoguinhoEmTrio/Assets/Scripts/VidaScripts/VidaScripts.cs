@@ -7,7 +7,7 @@ public class VidaScripts : MonoBehaviour
     public SpriteRenderer numZero,numUm,numDois,numTres;
     void Start()
     {
-
+        
     }
 
     void Update()
