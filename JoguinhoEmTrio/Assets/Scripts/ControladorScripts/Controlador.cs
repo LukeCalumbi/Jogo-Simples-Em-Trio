@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Controlador : MonoBehaviour
 {   
+    public GameObject nave;
     public static bool playerAtingido;
     public static int vidasJogador,score;
     public static int modoJogo; // 0 => start, 1 => jogando, 2 => gameover
@@ -20,7 +22,7 @@ public class Controlador : MonoBehaviour
         }
         if (playerAtingido)
         {
-            vidasJogador--;
+            RealocarPLayer();
         }
         if(vidasJogador <= 0)
         {
@@ -45,6 +47,13 @@ public class Controlador : MonoBehaviour
     public void TerminarJogo()
     {
 
+    }
+
+    void RealocarPLayer()
+    {
+        vidasJogador--;
+        playerAtingido = false;
+        nave.transform.position = new Vector3(0,-8.5f,0);
     }
 
 }

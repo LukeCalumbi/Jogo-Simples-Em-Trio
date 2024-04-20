@@ -30,4 +30,7 @@ public class MenuPrincipal : MonoBehaviour
         Debug.Log("Sair do Jogo");
         Application.Quit();
     }
+
+    
+
 }
