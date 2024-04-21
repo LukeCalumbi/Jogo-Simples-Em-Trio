@@ -17,8 +17,8 @@ public class Asteroide : MonoBehaviour
     {
         MovimentarAsteroide();
 
-        if (transform.position.y < -20) 
-            Destroy(this.gameObject);
+        if (transform.position.y < -20 || Controlador.playerAtingido) 
+            Destroy(this.gameObject,4);
         if(vidaAsteroide <= 0)
         {
             Controlador.score += pontuacaoAsteroide;
@@ -55,7 +55,7 @@ public class Asteroide : MonoBehaviour
         float positionX = Random.Range(-maxPosicaoX,maxPosicaoX);
         transform.position += Vector3.left*positionX;
 
-        velocidade = Random.Range(Controlador.velocidadeMediaAsteroide-1.5f,Controlador.velocidadeMediaAsteroide+1.5f);
+        velocidade = Random.Range(Controlador.velocidadeMediaAsteroideFlutuante-1.5f,Controlador.velocidadeMediaAsteroideFlutuante+1.5f);
         pontuacaoAsteroide = vidaAsteroide;
     }
 

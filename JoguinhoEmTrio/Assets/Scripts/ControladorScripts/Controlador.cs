@@ -3,16 +3,20 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using System.Threading;
+using System;
 
 public class Controlador : MonoBehaviour
 {   
     public GameObject nave;
     public GameObject myCamera;
     public static bool playerAtingido;
-    public static float vidasJogador =3,score;
+    public static float vidasJogador = 3,score;
     public static int modoJogo; // 0 => start, 1 => jogando, 2 => gameover
     public static float tempoRealocacao = 5,timer;
     public static float velocidadeMediaAsteroide = 6.5f;
+    public static float velocidadeMediaAsteroideFlutuante;
+    public static float timerGeracaoAsteroide = 3;
+    public static float timerGeracaoAsteroideFlutuante;
     void Start()
     {
         modoJogo = 0;
@@ -44,10 +48,13 @@ public class Controlador : MonoBehaviour
             timer = tempoRealocacao;
         }
 
-        if(vidasJogador <= 0)
+        if(vidasJogador < 0)
         {
-            TerminarJogo();
+            SceneManager.LoadScene("Menu");//TerminarJogo();
         }
+
+        timerGeracaoAsteroideFlutuante = timerGeracaoAsteroide - (float) Math.Log(score+1,20);
+        velocidadeMediaAsteroideFlutuante = velocidadeMediaAsteroide + (float) Math.Log(score+1,20);
     }
 
 
@@ -64,13 +71,4 @@ public class Controlador : MonoBehaviour
         modoJogo = 1;
     } 
 
-    public void TerminarJogo()
-    {
-
-    }
-
-    void RealocarPLayer()
-    {   
-
-    }
 }

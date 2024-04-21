@@ -17,7 +17,7 @@ public class GeradorAsteroide : MonoBehaviour
     public GameObject asteroide11;
     public GameObject asteroide12;
 
-    public float tempoEspera = 3, temporizador =0;
+    public float tempoEspera = Controlador.timerGeracaoAsteroideFlutuante, temporizador = 0;
     void Start()
     {
         
@@ -25,6 +25,7 @@ public class GeradorAsteroide : MonoBehaviour
 
     void Update()
     {   
+        tempoEspera = Controlador.timerGeracaoAsteroideFlutuante;
         if (!Controlador.playerAtingido)
         {
             if(temporizador < tempoEspera)
